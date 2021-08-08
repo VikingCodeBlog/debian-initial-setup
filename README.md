@@ -35,9 +35,44 @@ sudo apt install xorg
 ```
 
 Install window manager [i3](https://i3wm.org/)
+I'm not going to install i3 directly, I prefer to use the [i3-gaps](https://github.com/Airblader/i3) fork, for that I need to install other tools like git, gcc and make
+
 ```bash
-sudo apt-get install i3 i3status i3lock dmenu
+sudo apt-get install i3status i3lock dmenu git gcc make nitrogen lxappearance meson
 ```
+
+Build i3-gaps
+
+```bash
+# clone the repository
+git clone https://www.github.com/Airblader/i3 i3-gaps
+cd i3-gaps
+
+# compile
+mkdir -p build && cd build
+meson ..
+ninja
+meson install
+```
+
+i3-gaps dependences -> ([wiki](https://github.com/Airblader/i3/wiki/Building-from-source))
+
+Intasll i3-gaps dependences (Debian)
+
+```bash
+apt install dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev
+```
+Install i3-gaps dependences (Ubuntu)
+
+```bash
+sudo apt install -y libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev \
+libxcb-util0-dev libxcb-icccm4-dev libyajl-dev \
+libstartup-notification0-dev libxcb-randr0-dev \
+libev-dev libxcb-cursor-dev libxcb-xinerama0-dev \
+libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev \
+autoconf libxcb-xrm0 libxcb-xrm-dev automake libxcb-shape0-dev
+```
+
 
 Install [LightDM](https://github.com/canonical/lightdm) as a display manager
 
