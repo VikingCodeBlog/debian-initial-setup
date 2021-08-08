@@ -91,6 +91,8 @@ Desktop
 ![Installer 5](./img/screenshot5.png)
 
 ## Config i3
+
+### Option 1 (Default config)
 Press the "enter" key to generate an i3 configuration file.
 
 ![Installer 6](./img/screenshot6.png)
@@ -98,6 +100,15 @@ Press the "enter" key to generate an i3 configuration file.
 Press the "win" key to select it as the default modifier and press enter again to save the setting.
 
 ![Installer 7](./img/screenshot7.png)
+
+### Option 2 (My own config)
+
+I don't use the default configuration, instead I use my own repository.
+
+```bash
+wget -O ~/.config/i3/config https://raw.githubusercontent.com/VikingCodeBlog/i3-config/main/config
+```
+
 ## Polybar
 ```bash
 sudo apt install polybar
