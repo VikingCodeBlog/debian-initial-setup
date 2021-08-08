@@ -38,7 +38,7 @@ Install window manager [i3](https://i3wm.org/)
 I'm not going to install i3 directly, I prefer to use the [i3-gaps](https://github.com/Airblader/i3) fork, for that I need to install other tools like git, gcc and make
 
 ```bash
-sudo apt-get install i3status i3lock dmenu git gcc make nitrogen lxappearance meson
+sudo apt-get install i3status i3lock dmenu git gcc make lxappearance meson
 ```
 
 Build i3-gaps
@@ -108,6 +108,23 @@ I don't use the default configuration, instead I use my own repository.
 ```bash
 wget -O ~/.config/i3/config https://raw.githubusercontent.com/VikingCodeBlog/i3-config/main/config
 ```
+`Caution!` I use commands to open third-party applications, for the configuration to work 100%, you will need programs like [shutter](https://snapcraft.io/install/shutter/debian), [nitrogen](https://packages.debian.org/stretch/x11/nitrogen), [nvim](https://neovim.io/)...
+
+## Install wallpapper
+
+I use nitrogen to manage wallpapers.
+
+```bash
+sudo apt install nitrogen
+```
+Congig:
+Open nitrogen -> preferences -> directories -> add your wallppaper directory
+
+![Nitrogen 1](./img/screenshot8.png)
+
+i3 with wallpaper
+
+![Nitrogen 2](./img/screenshot9.png)
 
 ## Polybar
 ```bash
