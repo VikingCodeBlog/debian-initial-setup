@@ -183,3 +183,11 @@ wget -O ~/.config/polybar/ https://raw.githubusercontent.com/VikingCodeBlog/poly
 chmod +x $HOME/.config/polybar/launch.sh
 ```
 
+## ZSH
+
+```bash
+sudo apt-get install zsh
+sudo apt-get install git-core
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+chsh -s `which zsh`
+```
