@@ -175,9 +175,11 @@ sudo snap install polybar-git --edge --devmode
 ```
 
 ### Config polybar
-
+[Config repository](https://github.com/VikingCodeBlog/polybar-config)
 ```
 mkdir -p ~/.config/polybar/
-touch ~/.config/polybar/config
+wget -O ~/.config/polybar/ https://raw.githubusercontent.com/VikingCodeBlog/polybar-config/main/config
+wget -O ~/.config/polybar/ https://raw.githubusercontent.com/VikingCodeBlog/polybar-config/main/launch.sh
+chmod +x $HOME/.config/polybar/launch.sh
 ```
 
