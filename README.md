@@ -184,6 +184,7 @@ chmod +x $HOME/.config/polybar/launch.sh
 ```
 
 ## ZSH
+I use ZSH + OhMyZsh as a default shell
 
 ```bash
 sudo apt-get install zsh
@@ -191,3 +192,28 @@ sudo apt-get install git-core
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 chsh -s `which zsh`
 ```
+
+#### Config ZSH
+
+This is my own config ([Repo](https://github.com/VikingCodeBlog/.zshrc))
+
+'Caution! This will delete your current config'
+
+```bash
+rm ~/.zshrc
+wget -O ~/.config/.zshrc https://raw.githubusercontent.com/VikingCodeBlog/.zshrc/main/.zshrc
+ln -s ~/.config/.zshrc $HOME/.zshrc
+```
+
+## Add Gnome terminal color theme
+This is my own config color scheme for Gnome Terminal ([Repo](https://github.com/VikingCodeBlog/Mjolnir-gnome-terminal-theme))
+
+![screenshot10](https://raw.githubusercontent.com/VikingCodeBlog/Mjolnir-gnome-terminal-theme/master/screenshot-dark.png)
+
+```bash
+git clone https://github.com/VikingCodeBlog/Mjolnir-gnome-terminal-theme.git
+cd Mjolnir-gnome-terminal-theme
+bash install
+```
+
+
