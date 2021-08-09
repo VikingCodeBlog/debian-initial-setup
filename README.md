@@ -182,8 +182,9 @@ wget -O ~/.config/polybar/ https://raw.githubusercontent.com/VikingCodeBlog/poly
 wget -O ~/.config/polybar/ https://raw.githubusercontent.com/VikingCodeBlog/polybar-config/main/launch.sh
 chmod +x $HOME/.config/polybar/launch.sh
 ```
-![screenshot10](./img/screenshot10.png)
+This is my polybar:
 
+![screenshot10](./img/screenshot10.png)
 
 
 ## ZSH
