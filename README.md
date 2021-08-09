@@ -182,6 +182,9 @@ wget -O ~/.config/polybar/ https://raw.githubusercontent.com/VikingCodeBlog/poly
 wget -O ~/.config/polybar/ https://raw.githubusercontent.com/VikingCodeBlog/polybar-config/main/launch.sh
 chmod +x $HOME/.config/polybar/launch.sh
 ```
+![screenshot10](./img/screenshot10.png)
+
+
 
 ## ZSH
 I use ZSH + OhMyZsh as a default shell
@@ -208,12 +211,10 @@ ln -s ~/.config/.zshrc $HOME/.zshrc
 ## Add Gnome terminal color theme
 This is my own config color scheme for Gnome Terminal ([Repo](https://github.com/VikingCodeBlog/Mjolnir-gnome-terminal-theme))
 
-![screenshot10](https://raw.githubusercontent.com/VikingCodeBlog/Mjolnir-gnome-terminal-theme/master/screenshot-dark.png)
+![screenshot11](https://raw.githubusercontent.com/VikingCodeBlog/Mjolnir-gnome-terminal-theme/master/screenshot-dark.png)
 
 ```bash
 git clone https://github.com/VikingCodeBlog/Mjolnir-gnome-terminal-theme.git
 cd Mjolnir-gnome-terminal-theme
 bash install
 ```
-
-
